@@ -25,6 +25,13 @@ function plusBtn(inputid1,displayid){
 
 
 }
+//remove btn
+function remove(btnid,containerid){
+    document.getElementById(btnid).addEventListener('click',function(){
+        document.getElementById(containerid).style.display='none';
+    
+    })
+}
 
 
 //minus1 btn works
@@ -71,15 +78,17 @@ document.getElementById('checkout').addEventListener('click',function(){
     document.getElementById('total').innerText=input1+input2+vat;
 })
 
+//cross btn work
 document.getElementById('remove1').addEventListener('click',function(){
     document.getElementById('area1').style.display='none';
   
 })
 
-document.getElementById('remove2').addEventListener('click',function(){
-    document.getElementById('area2').style.display='none';
+//removing first container
+remove('remove1','area1');
+remove('remove2','area2');
 
-})
+
 
 
 
