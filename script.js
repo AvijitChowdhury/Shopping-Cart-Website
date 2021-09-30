@@ -2,13 +2,17 @@
 //minus btn
 function minusBtn(inputid,displayid){
     const inputNum=document.getElementById(inputid).value;
-    const num=parseFloat(inputNum);
-    const total=num-1;
-    document.getElementById(inputid).value=total;
+   
+        const num=parseFloat(inputNum);
+        const total=num-1;
+        if(total>=0){
+        document.getElementById(inputid).value=total;
+    
+   
 
     const purchasetext=document.getElementById(displayid).innerText;
     const purchaseAmount=parseFloat(purchasetext);
-    document.getElementById(displayid).innerText=purchaseAmount/2;
+    document.getElementById(displayid).innerText=purchaseAmount/2;}
 
 
 }
