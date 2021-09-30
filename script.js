@@ -65,8 +65,10 @@ document.getElementById('checkout').addEventListener('click',function(){
     const input1=parseFloat(document.getElementById('price-1').innerText);
     const input2=parseFloat(document.getElementById('price-2').innerText);
 
+    const vat= parseFloat(document.getElementById('vat').innerText);
+
     document.getElementById('subtotal').innerText=input1+input2;
-    document.getElementById('total').innerText=input1+input2;
+    document.getElementById('total').innerText=input1+input2+vat;
 })
 
 
