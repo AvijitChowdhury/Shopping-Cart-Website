@@ -71,7 +71,15 @@ document.getElementById('checkout').addEventListener('click',function(){
     document.getElementById('total').innerText=input1+input2+vat;
 })
 
+document.getElementById('remove1').addEventListener('click',function(){
+    document.getElementById('area1').style.display='none';
+  
+})
 
+document.getElementById('remove2').addEventListener('click',function(){
+    document.getElementById('area2').style.display='none';
+
+})
 
 
 
